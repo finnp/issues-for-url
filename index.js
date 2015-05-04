@@ -3,10 +3,10 @@ var trumpet = require('trumpet')
 var concat = require('concat-stream')
 var readonly = require('read-only-stream')
 var Through = require('stream').PassThrough
-var tr = trumpet()
 
 module.exports = function (url) {
   var stream = new Through({objectMode: true})
+  var tr = trumpet()
   tr.selectAll('ul.table-list-issues li a.issue-title-link', function (issue) {
     issue.getAttribute('href', function (href) {
       issue.createReadStream()
