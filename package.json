@@ -1,6 +1,6 @@
 {
   "name": "issues-for-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "List GitHub issues for a given url",
   "main": "index.js",
   "scripts": {
