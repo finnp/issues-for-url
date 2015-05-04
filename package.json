@@ -1,0 +1,23 @@
+{
+  "name": "issues-for-url",
+  "version": "1.0.0",
+  "description": "List GitHub issues for a given url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnp/issues-for-url.git"
+  },
+  "keywords": [
+    "github",
+    "issues"
+  ],
+  "author": "Finn Pauls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finnp/issues-for-url/issues"
+  },
+  "homepage": "https://github.com/finnp/issues-for-url#readme"
+}
