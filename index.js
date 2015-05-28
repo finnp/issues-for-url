@@ -2,6 +2,7 @@ var request = require('request')
 var trumpet = require('trumpet')
 var concat = require('concat-stream')
 var readonly = require('read-only-stream')
+var ent = require('ent')
 var Through = require('stream').PassThrough
 
 module.exports = function (url) {
@@ -11,7 +12,7 @@ module.exports = function (url) {
     issue.getAttribute('href', function (href) {
       issue.createReadStream()
         .pipe(concat({encoding:'string'}, function (title) {
-          stream.write({url: 'https://github.com' + href, title: title.trim()})
+          stream.write({url: 'https://github.com' + href, title: ent.decode(title.trim())})
         }))
     })  
   })
